@@ -19,6 +19,7 @@
             </Setter>
 
             <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="White" />
         </Style.Setters>
 
         <Style.Triggers>

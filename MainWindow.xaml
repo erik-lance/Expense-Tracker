@@ -33,10 +33,7 @@
             <StackPanel Grid.Column="0" Grid.Row="1">
                 <RadioButton Content="Home"
                              Height="50"
-                             Foreground="White"
                              FontSize="16"
-                             VerticalAlignment="Center"
-                             HorizontalAlignment="Left"
                              GroupName="Menu"
                              Style="{StaticResource MenuOptionTheme}"/>
 
