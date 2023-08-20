@@ -8,6 +8,7 @@
         Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None"
+        ResizeMode="NoResize"
         Height="600" Width="900">
     <Border Background="#232528"
             CornerRadius="10">
