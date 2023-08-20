@@ -37,6 +37,20 @@
                              GroupName="Menu"
                              Style="{StaticResource MenuOptionTheme}"/>
 
+                <RadioButton Content="Data"
+                             Height="50"
+                             FontSize="16"
+                             GroupName="Menu"
+                             Style="{StaticResource MenuOptionTheme}"/>
+
+                <RadioButton Content="Settings"
+                             Height="50"
+                             FontSize="16"
+                             GroupName="Menu"
+                             Style="{StaticResource MenuOptionTheme}"/>
+                
+
+
             </StackPanel>
         </Grid>
     </Border>
