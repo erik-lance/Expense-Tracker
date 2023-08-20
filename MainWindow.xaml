@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Expense_Tracker"
         mc:Ignorable="d"
-        Title="Expense Tracker" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Height="600" Width="900">
+    <Border Background="#232528"
+            CornerRadius="10">
+        <Grid>
+            
+        </Grid>
+    </Border>
 </Window>
