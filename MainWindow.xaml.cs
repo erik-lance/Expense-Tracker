@@ -24,5 +24,11 @@ namespace Expense_Tracker
         {
             InitializeComponent();
         }
+
+        private void Drag_Window(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
     }
 }
