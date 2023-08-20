@@ -22,7 +22,14 @@
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-                
+
+            <TextBlock Grid.Column="0"
+                       Grid.Row="0"
+                       Text="Expense Tracker"
+                       Foreground="White"
+                       FontSize="20"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
         </Grid>
     </Border>
 </Window>
