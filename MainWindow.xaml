@@ -53,6 +53,11 @@
                              FontSize="16"
                              GroupName="Menu"
                              Style="{StaticResource MenuOptionTheme}"/>
+                <RadioButton Content="Add Data"
+                             Height="50"
+                             FontSize="16"
+                             GroupName="Menu"
+                             Style="{StaticResource MenuOptionTheme}"/>
 
                 <RadioButton Content="Settings"
                              Height="50"
@@ -60,9 +65,10 @@
                              GroupName="Menu"
                              Style="{StaticResource MenuOptionTheme}"/>
                 
-
-
             </StackPanel>
+
+            <ContentControl Grid.Column="1" Grid.Row="1" 
+                            />
         </Grid>
     </Border>
 </Window>
