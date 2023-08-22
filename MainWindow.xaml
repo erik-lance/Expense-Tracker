@@ -4,12 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Expense_Tracker"
+        xmlns:viewModel="clr-namespace:Expense_Tracker.MVVM.ViewModel"
         mc:Ignorable="d"
         Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None"
         ResizeMode="NoResize"
         Height="600" Width="900">
+    <Window.DataContext>
+        <viewModel:MainViewModel />
+    </Window.DataContext>
+    
     <Border Background="#232528"
             CornerRadius="10">
         <Grid>
@@ -64,10 +69,11 @@
                              FontSize="16"
                              GroupName="Menu"
                              Style="{StaticResource MenuOptionTheme}"/>
-                
+
             </StackPanel>
 
-            <ContentControl Grid.Column="1" Grid.Row="1" 
+            <ContentControl Grid.Column="1" Grid.Row="1"
+                            Content="{Binding CurrentView}"
                             />
         </Grid>
     </Border>
