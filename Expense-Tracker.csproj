@@ -87,6 +87,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\ViewModel\AddDataViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\View\AddDataView.xaml.cs">
       <DependentUpon>AddDataView.xaml</DependentUpon>
