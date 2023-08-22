@@ -10,12 +10,12 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuOptionTheme.xaml" />
                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml" />
-
-                <DataTemplate DataType="{x:Type viewModel:AddDataViewModel}">
-                    <view:AddDataView />
-                </DataTemplate>
-                
             </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type viewModel:AddDataViewModel}">
+                <view:AddDataView />
+            </DataTemplate>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
