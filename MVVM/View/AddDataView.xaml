@@ -91,6 +91,13 @@
                     Style="{StaticResource MaterialDesignTextBox}"
                  />
 
+                <ComboBox Grid.Row="4"
+                    Width="400"
+                    materialDesign:HintAssist.Hint="Category of Expense"
+                >
+                    <ComboBoxItem Content="Food" />
+                </ComboBox>
+
             </Grid>
             
         </Border>
