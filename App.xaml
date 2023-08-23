@@ -4,17 +4,27 @@
              xmlns:local="clr-namespace:Expense_Tracker"
              xmlns:viewModel="clr-namespace:Expense_Tracker.MVVM.ViewModel"
              xmlns:view="clr-namespace:Expense_Tracker.MVVM.View"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuOptionTheme.xaml" />
                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml" />
+                
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="DeepPurple" SecondaryColor="Lime" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+
             </ResourceDictionary.MergedDictionaries>
             
             <DataTemplate DataType="{x:Type viewModel:AddDataViewModel}">
                 <view:AddDataView />
             </DataTemplate>
+            
+            
             
         </ResourceDictionary>
     </Application.Resources>
