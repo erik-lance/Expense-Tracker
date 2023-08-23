@@ -5,7 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Expense_Tracker.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+            Background="{DynamicResource MaterialDesignPaper}"
+            TextElement.FontWeight="Medium"
+            TextElement.FontSize="14"
+            FontFamily="{materialDesign:MaterialDesignFont}"
+             
+             >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -40,11 +49,27 @@
                    />
 
                 <TextBox Grid.Row="2"
-                    Text="Expense Name"
+                    Width="400"
+                    Tag="Expense Name"
                     FontSize="20"
-                    HorizontalAlignment="Center"
-                    Style="{StaticResource FlatTextBox}"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    BorderBrush="White"
+                    materialDesign:HintAssist.Hint="Expense Name"
+                    Style="{StaticResource MaterialDesignTextBox}"
                  />
+
+                <TextBox Grid.Row="3"
+                    Width="400"
+                    Tag="Expense Amount"
+                    FontSize="20"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    BorderBrush="White"
+                    materialDesign:HintAssist.Hint="Expense Amount"
+                    Style="{StaticResource MaterialDesignTextBox}"
+                 />
+
             </Grid>
             
         </Border>
