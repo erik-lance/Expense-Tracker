@@ -8,15 +8,21 @@
                     <ControlTemplate TargetType="{x:Type TextBox}">
                         <Border>
                             <Grid>
-                                <Rectangle StrokeThickness="1"/>
-                                <TextBox Margin="1"
-                                         Text="{TemplateBinding Text}"
-                                         BorderThickness="0"
-                                         Background="Transparent"
-                                         VerticalAlignment="Center"
-                                         Padding="5"
-                                         Foreground="White"
-                                         x:Name="TextBox" />
+                                <Border BorderThickness="0,0,0,1" BorderBrush="White" />
+                                <Border 
+                                        Height="auto"
+                                        Width="auto"
+                                        Background="White"
+                                        Opacity="0.1"
+                                        Padding="0" />
+                                <TextBox
+                                     Text="{TemplateBinding Text}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     VerticalAlignment="Center"
+                                     Padding="5"
+                                     Foreground="White"
+                                     x:Name="TextBox" />
                             </Grid>
                         </Border>
                     </ControlTemplate>
