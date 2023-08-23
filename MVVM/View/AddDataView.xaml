@@ -48,7 +48,11 @@
                    Foreground="White"
                    />
 
-                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
                     <DatePicker
                         materialDesign:HintAssist.Hint="Date of Transaction"
                         Width="200"
@@ -56,13 +60,13 @@
                         Style="{StaticResource MaterialDesignFilledDatePicker}"
                     />
 
-                    <materialDesign:TimePicker
+                    <materialDesign:TimePicker Grid.Column="1"
                         materialDesign:HintAssist.Hint="Time"  
                         Width="200"
                         HorizontalAlignment="Center"
                         Style="{StaticResource MaterialDesignFilledTimePicker}"
                     />
-                </StackPanel>
+                </Grid>
                 
 
                 <TextBox Grid.Row="2"
