@@ -48,6 +48,12 @@
                    Foreground="White"
                    />
 
+                <DatePicker Grid.Row="1"
+                            Width="200"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource MaterialDesignFilledDatePicker}"
+                    />
+
                 <TextBox Grid.Row="2"
                     Width="400"
                     Tag="Expense Name"
