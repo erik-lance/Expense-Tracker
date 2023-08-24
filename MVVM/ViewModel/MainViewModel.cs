@@ -5,6 +5,7 @@ namespace Expense_Tracker.MVVM.ViewModel
 {
     internal class MainViewModel : ObservableObject
     {
+        public HomeViewModel HomeVm { get; set; }
         public AddDataViewModel AddDataVm { get; set; }
         private object _currentView;
 
@@ -20,8 +21,9 @@ namespace Expense_Tracker.MVVM.ViewModel
 
         public MainViewModel()
         {
+            HomeVm = new HomeViewModel();
             AddDataVm = new AddDataViewModel();
-            CurrentView = AddDataVm;
+            CurrentView = HomeVm;
         }
 
     }
