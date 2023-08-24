@@ -12,10 +12,8 @@
                     "type": "integer",
                     "properties": [],
                     "GUID": "14d3cf40-4226-11ee-9c0a-3ddbf1dc2677",
-                    "error": {
-                        "name": false,
-                        "code": false
-                    }
+                    "primaryKey": true,
+                    "error": {}
                 },
                 {
                     "name": "date",
@@ -41,6 +39,22 @@
                         "name": false,
                         "code": false
                     }
+                },
+                {
+                    "name": "category",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "c3f913e0-4258-11ee-9c0a-3ddbf1dc2677",
+                    "foreignCollection": "979dcac0-4258-11ee-9c0a-3ddbf1dc2677",
+                    "foreignField": [
+                        "979dcac0-4258-11ee-9c0a-3ddbf1dc2677",
+                        "b07ef690-4258-11ee-9c0a-3ddbf1dc2677"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "d5422060-4258-11ee-9c0a-3ddbf1dc2677",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -51,18 +65,88 @@
             "isActivated": true,
             "additionalProperties": false,
             "GUID": "0e642a60-4226-11ee-9c0a-3ddbf1dc2677"
+        },
+        {
+            "collectionName": "Category",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "GUID": "ab4b0600-4258-11ee-9c0a-3ddbf1dc2677",
+                    "primaryKey": true,
+                    "readOnly": false,
+                    "error": {}
+                },
+                {
+                    "name": "category_name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "b07ef690-4258-11ee-9c0a-3ddbf1dc2677",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "childRelationships": [
+                        "d5422060-4258-11ee-9c0a-3ddbf1dc2677"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "97e29bf0-4258-11ee-9c0a-3ddbf1dc2677"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "979dcac0-4258-11ee-9c0a-3ddbf1dc2677",
+            "hackoladeMeta": {
+                "namingConvention": ""
+            }
         }
     ],
     "buckets": [],
     "views": [],
-    "relationships": [],
+    "relationships": [
+        {
+            "name": "fk Category. to Transaction.",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "979dcac0-4258-11ee-9c0a-3ddbf1dc2677",
+                    "b07ef690-4258-11ee-9c0a-3ddbf1dc2677"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "0e642a60-4226-11ee-9c0a-3ddbf1dc2677",
+                    "c3f913e0-4258-11ee-9c0a-3ddbf1dc2677"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "d5422060-4258-11ee-9c0a-3ddbf1dc2677",
+            "parentCollection": "979dcac0-4258-11ee-9c0a-3ddbf1dc2677",
+            "childCollection": "0e642a60-4226-11ee-9c0a-3ddbf1dc2677"
+        }
+    ],
     "users": [],
     "diagramViews": [],
     "idToNameHashTable": {
         "0e642a60-4226-11ee-9c0a-3ddbf1dc2677": "Transaction",
         "14d3cf40-4226-11ee-9c0a-3ddbf1dc2677": "id",
         "2a546af0-4226-11ee-9c0a-3ddbf1dc2677": "date",
-        "33bb08b0-4226-11ee-9c0a-3ddbf1dc2677": "amount"
+        "33bb08b0-4226-11ee-9c0a-3ddbf1dc2677": "amount",
+        "979dcac0-4258-11ee-9c0a-3ddbf1dc2677": "Category",
+        "ab4b0600-4258-11ee-9c0a-3ddbf1dc2677": "id",
+        "b07ef690-4258-11ee-9c0a-3ddbf1dc2677": "category_name",
+        "c3f913e0-4258-11ee-9c0a-3ddbf1dc2677": "category",
+        "d5422060-4258-11ee-9c0a-3ddbf1dc2677": "fk Category. to Transaction."
     },
     "definitions": {
         "type": "definitions",
@@ -92,7 +176,7 @@
             "modelName": false
         }
     },
-    "lastModifTS": "2023-08-24T02:30:57.531Z",
+    "lastModifTS": "2023-08-24T08:33:48.041Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -110,7 +194,15 @@
                         "x": 165,
                         "y": 157,
                         "width": 188,
-                        "height": 87,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "979dcac0-4258-11ee-9c0a-3ddbf1dc2677",
+                        "x": 490,
+                        "y": 237,
+                        "width": 215,
+                        "height": 69,
                         "color": {}
                     }
                 ],
