@@ -58,7 +58,8 @@
                              Height="50"
                              FontSize="16"
                              GroupName="Menu"
-                             Style="{StaticResource MenuOptionTheme}"/>
+                             Style="{StaticResource MenuOptionTheme}"
+                             IsChecked="True"/>
 
                 <RadioButton Content="Data"
                              Height="50"
