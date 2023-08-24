@@ -35,9 +35,11 @@
                 Recent Transactions
             </TextBlock>
 
-            <Border Background="#292729" DockPanel.Dock="Top"
+            <Border Background="#292729" DockPanel.Dock="Top">
+                <StackPanel x:Name="ListTransactions"
+                    HorizontalAlignment="Left" >
 
-            >
+                </StackPanel>
 
             </Border>
         </DockPanel>
