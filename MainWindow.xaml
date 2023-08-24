@@ -59,6 +59,7 @@
                              FontSize="16"
                              GroupName="Menu"
                              Style="{StaticResource MenuOptionTheme}"
+                             Command="{Binding HomeViewCommand}"
                              IsChecked="True"/>
 
                 <RadioButton Content="Data"
@@ -70,6 +71,7 @@
                              Height="50"
                              FontSize="16"
                              GroupName="Menu"
+                             Command="{Binding AddDataViewCommand}"
                              Style="{StaticResource MenuOptionTheme}"/>
 
                 <RadioButton Content="Settings"
