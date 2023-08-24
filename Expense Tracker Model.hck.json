@@ -13,6 +13,27 @@
                     "properties": [],
                     "GUID": "14d3cf40-4226-11ee-9c0a-3ddbf1dc2677",
                     "primaryKey": true,
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "15d95030-4259-11ee-9c0a-3ddbf1dc2677",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "amount",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "GUID": "33bb08b0-4226-11ee-9c0a-3ddbf1dc2677",
+                    "required": true,
                     "error": {}
                 },
                 {
@@ -29,12 +50,13 @@
                     }
                 },
                 {
-                    "name": "amount",
+                    "name": "time",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "numeric",
+                    "type": "document",
                     "properties": [],
-                    "GUID": "33bb08b0-4226-11ee-9c0a-3ddbf1dc2677",
+                    "additionalProperties": false,
+                    "GUID": "3473c930-4259-11ee-9c0a-3ddbf1dc2677",
                     "error": {
                         "name": false,
                         "code": false
@@ -79,6 +101,7 @@
                     "GUID": "ab4b0600-4258-11ee-9c0a-3ddbf1dc2677",
                     "primaryKey": true,
                     "readOnly": false,
+                    "required": true,
                     "error": {}
                 },
                 {
@@ -88,13 +111,11 @@
                     "type": "string",
                     "properties": [],
                     "GUID": "b07ef690-4258-11ee-9c0a-3ddbf1dc2677",
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
                     "childRelationships": [
                         "d5422060-4258-11ee-9c0a-3ddbf1dc2677"
-                    ]
+                    ],
+                    "required": true,
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -141,12 +162,14 @@
         "0e642a60-4226-11ee-9c0a-3ddbf1dc2677": "Transaction",
         "14d3cf40-4226-11ee-9c0a-3ddbf1dc2677": "id",
         "2a546af0-4226-11ee-9c0a-3ddbf1dc2677": "date",
-        "33bb08b0-4226-11ee-9c0a-3ddbf1dc2677": "amount",
         "979dcac0-4258-11ee-9c0a-3ddbf1dc2677": "Category",
         "ab4b0600-4258-11ee-9c0a-3ddbf1dc2677": "id",
         "b07ef690-4258-11ee-9c0a-3ddbf1dc2677": "category_name",
         "c3f913e0-4258-11ee-9c0a-3ddbf1dc2677": "category",
-        "d5422060-4258-11ee-9c0a-3ddbf1dc2677": "fk Category. to Transaction."
+        "d5422060-4258-11ee-9c0a-3ddbf1dc2677": "fk Category. to Transaction.",
+        "15d95030-4259-11ee-9c0a-3ddbf1dc2677": "name",
+        "33bb08b0-4226-11ee-9c0a-3ddbf1dc2677": "amount",
+        "3473c930-4259-11ee-9c0a-3ddbf1dc2677": "time"
     },
     "definitions": {
         "type": "definitions",
@@ -176,7 +199,7 @@
             "modelName": false
         }
     },
-    "lastModifTS": "2023-08-24T08:33:48.041Z",
+    "lastModifTS": "2023-08-24T08:36:03.200Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -193,15 +216,15 @@
                         "GUID": "0e642a60-4226-11ee-9c0a-3ddbf1dc2677",
                         "x": 165,
                         "y": 157,
-                        "width": 188,
-                        "height": 105,
+                        "width": 202,
+                        "height": 141,
                         "color": {}
                     },
                     {
                         "GUID": "979dcac0-4258-11ee-9c0a-3ddbf1dc2677",
                         "x": 490,
                         "y": 237,
-                        "width": 215,
+                        "width": 239,
                         "height": 69,
                         "color": {}
                     }
