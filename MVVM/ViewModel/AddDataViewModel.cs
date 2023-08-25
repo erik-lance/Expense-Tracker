@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using System.Transactions;
 
 namespace Expense_Tracker.MVVM.ViewModel
 {
     internal class AddDataViewModel
     {
+        public ObservableCollection<Transaction> RecentTransactions { get; set; }
+
+        public AddDataViewModel()
+        {
+            // Initialize RecentTransactions
+            RecentTransactions = new ObservableCollection<Transaction>();
+        }
     }
 }
