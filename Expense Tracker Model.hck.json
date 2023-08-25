@@ -77,6 +77,18 @@
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "d5422060-4258-11ee-9c0a-3ddbf1dc2677",
                     "error": {}
+                },
+                {
+                    "name": "notes",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "GUID": "26075610-4325-11ee-aa47-79ceb5b9bf3c",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
                 }
             ],
             "definitions": {
@@ -169,7 +181,8 @@
         "d5422060-4258-11ee-9c0a-3ddbf1dc2677": "fk Category. to Transaction.",
         "15d95030-4259-11ee-9c0a-3ddbf1dc2677": "name",
         "33bb08b0-4226-11ee-9c0a-3ddbf1dc2677": "amount",
-        "3473c930-4259-11ee-9c0a-3ddbf1dc2677": "time"
+        "3473c930-4259-11ee-9c0a-3ddbf1dc2677": "time",
+        "26075610-4325-11ee-aa47-79ceb5b9bf3c": "notes"
     },
     "definitions": {
         "type": "definitions",
@@ -199,7 +212,7 @@
             "modelName": false
         }
     },
-    "lastModifTS": "2023-08-24T08:36:03.200Z",
+    "lastModifTS": "2023-08-25T08:56:12.120Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -217,7 +230,7 @@
                         "x": 165,
                         "y": 157,
                         "width": 202,
-                        "height": 141,
+                        "height": 159,
                         "color": {}
                     },
                     {
