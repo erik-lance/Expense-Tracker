@@ -117,7 +117,15 @@
                     <ComboBoxItem Content="Food" />
                 </ComboBox>
 
-                <Grid Grid.Row="5">
+                <TextBox Grid.Row="5" Grid.RowSpan="2"
+                        Margin="40, 10"
+                         materialDesign:HintAssist.Hint="Notes"
+                         TextWrapping="Wrap"
+                         FontWeight="Normal"
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                    />
+
+                <Grid Grid.Row="7">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
