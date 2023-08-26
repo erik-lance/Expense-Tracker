@@ -8,8 +8,8 @@ namespace Expense_Tracker.MVVM.ViewModel
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand AddDataViewCommand { get; set; }
 
-        public HomeViewModel HomeVm { get; set; }
-        public AddDataViewModel AddDataVm { get; set; }
+        private readonly HomeViewModel _homeVm;
+        private readonly AddDataViewModel _addDataVm;
         private object _currentView;
 
         public object CurrentView
@@ -22,20 +22,20 @@ namespace Expense_Tracker.MVVM.ViewModel
             }
         }
 
-        public MainViewModel()
+        public MainViewModel(HomeViewModel homeVm, AddDataViewModel addDataVm)
         {
-            HomeVm = new HomeViewModel();
-            AddDataVm = new AddDataViewModel();
-            CurrentView = HomeVm;
+            _homeVm = homeVm;
+            _addDataVm = addDataVm;
+            CurrentView = _homeVm;
 
             HomeViewCommand = new RelayCommand(o =>
             {
-                CurrentView = HomeVm;
+                CurrentView = _homeVm;
             });
 
             AddDataViewCommand = new RelayCommand(o =>
             {
-                CurrentView = AddDataVm;
+                CurrentView = _addDataVm;
             });
         }
 
