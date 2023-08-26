@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Expense_Tracker.MVVM.ViewModel;
+using System;
 using System.Windows.Controls;
 
 namespace Expense_Tracker.MVVM.View
@@ -8,9 +9,10 @@ namespace Expense_Tracker.MVVM.View
     /// </summary>
     public partial class AddDataView : UserControl
     {
-        public AddDataView()
+        public AddDataView(AddDataViewModel viewModel)
         {
             InitializeComponent();
+            DataContext = viewModel;
         }
     }
 }

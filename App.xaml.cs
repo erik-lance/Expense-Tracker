@@ -31,9 +31,7 @@ namespace Expense_Tracker
             serviceCollection.AddSingleton<DataAccess>();
 
             serviceCollection.AddTransient<AddDataViewModel>();
-            serviceCollection.AddTransient<HomeViewModel>();
             serviceCollection.AddTransient<AddDataView>();
-            serviceCollection.AddTransient<HomeView>();
 
             serviceCollection.AddTransient<MainWindow>();
 
