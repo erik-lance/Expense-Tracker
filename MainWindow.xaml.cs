@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Expense_Tracker.Core;
+using System;
 using System.Windows;
 using System.Windows.Input;
 
@@ -18,6 +19,11 @@ namespace Expense_Tracker
         {
             if (e.ChangedButton == MouseButton.Left)
                 this.DragMove();
+        }
+
+        public void SetViewModelLocator(ViewModelLocator viewModelLocator)
+        {
+            DataContext = viewModelLocator.MainViewModel;
         }
     }
 }

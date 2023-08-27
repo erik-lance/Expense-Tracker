@@ -18,10 +18,7 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Height="600" Width="900">
-    <Window.DataContext>
-        <viewModel:MainViewModel />
-    </Window.DataContext>
-    
+
     <Border Background="#232528"
             CornerRadius="10">
         <Grid>
