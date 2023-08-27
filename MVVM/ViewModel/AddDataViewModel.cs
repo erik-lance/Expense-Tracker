@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace Expense_Tracker.MVVM.ViewModel
 {
-    internal class AddDataViewModel
+    public class AddDataViewModel
     {
         private readonly DataAccess _dataAccess;
         public ICommand AddTransactionCommand { get; }

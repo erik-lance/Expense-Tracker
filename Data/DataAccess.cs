@@ -5,7 +5,7 @@ using System.Transactions;
 
 namespace Expense_Tracker.Data
 {
-    internal class DataAccess
+    public class DataAccess
     {
         private readonly string _connectionString;
 
