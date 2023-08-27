@@ -23,13 +23,11 @@
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView />
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type viewModel:AddDataViewModel}">
-                <view:AddDataView />
+                <ContentControl Content="{Binding ViewModelLocator.GetAddDataView}" />
             </DataTemplate>
-            
-            
-            
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
