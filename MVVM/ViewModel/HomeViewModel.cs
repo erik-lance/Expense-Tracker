@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Expense_Tracker.MVVM.ViewModel
 {
-    internal class HomeViewModel
+    public class HomeViewModel
     {
     }
 }

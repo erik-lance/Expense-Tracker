@@ -3,7 +3,7 @@ using System;
 
 namespace Expense_Tracker.MVVM.ViewModel
 {
-    internal class MainViewModel : ObservableObject
+    public class MainViewModel : ObservableObject
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand AddDataViewCommand { get; set; }

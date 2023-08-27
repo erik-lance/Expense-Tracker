@@ -6,7 +6,7 @@ namespace Expense_Tracker.Core
     /**
      *  This class is used to relay commands from the UI to the ViewModel.
      */
-    internal class RelayCommand : ICommand
+    public class RelayCommand : ICommand
     {
         private Action<object> _execute;
         private Func<object, bool> _canExecute;

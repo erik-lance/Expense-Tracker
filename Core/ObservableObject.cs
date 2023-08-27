@@ -7,7 +7,7 @@ namespace Expense_Tracker.Core
     /**
      * This class is used to notify the UI when a property is changed.
      */
-    internal class ObservableObject : INotifyPropertyChanged
+    public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
