@@ -4,6 +4,7 @@ using System.Windows;
 using Expense_Tracker.Data;
 using Expense_Tracker.MVVM.ViewModel;
 using Expense_Tracker.MVVM.View;
+using Expense_Tracker.Core;
 
 namespace Expense_Tracker
 {
@@ -19,8 +20,15 @@ namespace Expense_Tracker
 
             ConfigureServices();
 
+            // Register View Models
+            var viewModelLocator = _serviceProvider.GetRequiredService<ViewModelLocator>();
             var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
-            mainWindow.Show();
+            
+            mainWindow.DataContext = viewModelLocator.MainViewModel;
+            mainWindow.SetViewModelLocator(viewModelLocator);
+
+            //var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
+            //mainWindow.Show();
         }
 
         private void ConfigureServices()
@@ -29,9 +37,15 @@ namespace Expense_Tracker
 
             // Register dependencies
             serviceCollection.AddSingleton<DataAccess>();
+            serviceCollection.AddSingleton<ViewModelLocator>();
 
+            serviceCollection.AddTransient<MainViewModel>();
+
+            serviceCollection.AddTransient<HomeViewModel>();
+            serviceCollection.AddTransient<HomeView>();
             serviceCollection.AddTransient<AddDataViewModel>();
             serviceCollection.AddTransient<AddDataView>();
+            
 
             serviceCollection.AddTransient<MainWindow>();
 
