@@ -17,10 +17,6 @@
             FontFamily="{materialDesign:MaterialDesignFont}"
              
              >
-    <UserControl.DataContext>
-        <viewModel:AddDataViewModel />
-    </UserControl.DataContext>
-    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
